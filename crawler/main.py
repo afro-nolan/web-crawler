@@ -4,8 +4,9 @@ from spider import Spider
 from domain import *
 from general import *
 
-PROJECT_NAME = "readwrite"
-HOMEPAGE = "https://readwrite.com"
+
+PROJECT_NAME = input("Enter the name of your project: ")
+HOMEPAGE = input("Enter the homepage url of the website to be crawled: ")
 DOMAIN_NAME = get_domain_name(HOMEPAGE)
 QUEUE_FILE = PROJECT_NAME + "/queue.txt"
 CRAWLED_FILE = PROJECT_NAME + "/crawled.txt"
